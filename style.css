@@ -1,120 +1,315 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-}
-
- :root {
-    --cor-navegation: #667085;
-    --cor-vermelho: #8E2424;
-    --cor-titulo: #101828;
-}
-
-body {
-    height: 100vh;
-    width: 100vw;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 1rem 0;
-}
-
-.navegation ul {
-    display: flex;
-    list-style-type: none;
-}
-
-.navegation li {
-    font-size: 16px;
-    padding: 1em;
-}
-
-.navegation a {
-    text-decoration: none;
-    color: #667085;
-    margin-right: 2rem;
-}
-
-.navegation_busca {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    gap: 12px;
-}
-
-.button_entrar {
-    padding: 0.8rem 1rem;
-    color: #667085;
-    width: 83px;
-    height: 44px;
-    border-radius: 0.5rem;
-    border: transparent;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 0.9rem;
-    font-weight: 500;
-}
-
-.button_cadastrar {
-    width: 83px;
-    height: 44px;
-    border: 1px solid var(--cor-vermelho);
-    background-color: var(--cor-vermelho);
-    border-radius: 8px;
-    color: #FFFFFF;
-    cursor: pointer;
-}
-
-.sobre_nos {
-    padding: 7rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    margin: 0 4rem;
-}
-
-.sobre_nos span {
-    color: #8E2424;
-    font-weight: 600;
-}
-
-.sobre_nos h1 {
-    font-size: 2rem;
-}
-
-.sobre_nos p {
-    color: var(--cor-navegation);
-    font-weight: 400;
-    /* max-width: 50%;
+                             * {
+                                 margin: 0;
+                                 padding: 0;
+                                 box-sizing: border-box;
+                                 font-family: 'Inter', sans-serif;
+                             }
+                             
+                              :root {
+                                 --cor-navegation: #667085;
+                                 --cor-vermelho: #8E2424;
+                                 --cor-titulo: #101828;
+                             }
+                             
+                             body {
+                                 height: 100vh;
+                                 width: 100vw;
+                             }
+                             
+                             .container {
+                                 display: flex;
+                                 align-items: center;
+                                 justify-content: space-around;
+                                 padding: 1rem 0;
+                             }
+                             
+                             .navegation ul {
+                                 display: flex;
+                                 list-style-type: none;
+                             }
+                             
+                             .navegation li {
+                                 font-size: 16px;
+                                 padding: 1em;
+                             }
+                             
+                             .navegation a {
+                                 text-decoration: none;
+                                 color: #667085;
+                                 margin-right: 2rem;
+                             }
+                             
+                             .navegation_busca {
+                                 display: flex;
+                                 align-items: center;
+                                 font-size: 16px;
+                                 gap: 12px;
+                             }
+                             
+                             .button_entrar {
+                                 padding: 0.8rem 1rem;
+                                 color: #667085;
+                                 width: 83px;
+                                 height: 44px;
+                                 border-radius: 0.5rem;
+                                 border: transparent;
+                                 background-color: transparent;
+                                 cursor: pointer;
+                                 font-size: 0.9rem;
+                                 font-weight: 500;
+                             }
+                             
+                             .button_cadastrar {
+                                 width: 83px;
+                                 height: 44px;
+                                 border: 1px solid var(--cor-vermelho);
+                                 background-color: var(--cor-vermelho);
+                                 border-radius: 8px;
+                                 color: #FFFFFF;
+                                 cursor: pointer;
+                             }
+                             
+                             .sobre_nos {
+                                 padding: 7rem 0;
+                                 display: flex;
+                                 flex-direction: column;
+                                 align-items: center;
+                                 gap: 1rem;
+                                 margin: 0 auto;
+                             }
+                             
+                             .sobre_nos span {
+                                 color: #8E2424;
+                                 font-weight: 600;
+                             }
+                             
+                             .sobre_nos h1 {
+                                 font-size: 2rem;
+                             }
+                             
+                             .sobre_nos p {
+                                 color: var(--cor-navegation);
+                                 font-weight: 400;
+                                 /* max-width: 50%;
         text-align: center;
         line-height: 1.5rem;*/
-}
-
-.metricas {
-    padding: 0 4rem;
-    display: flex;
-    gap: 1.25rem;
-    text-align: center;
-}
-
-.metricas h1 {
-    padding: 1rem 0;
-    color: var(--cor-vermelho);
-    font-weight: 600;
-}
-
-.metricas span {
-    margin-bottom: 2rem;
-    color: var(--cor-titulo);
-    font-weight: 500;
-}
-
-.metricas p {
-    margin-top: 1rem;
-    color: var(--cor-navegation)
-}
+                             }
+                             
+                             .secundario_texto {
+                                 width: 71%;
+                                 text-align: center;
+                                 line-height: 22px;
+                             }
+                             
+                             .metricas {
+                                 display: flex;
+                                 gap: 1.25rem;
+                                 margin: 0 6rem;
+                             }
+                             
+                             .metricas h1 {
+                                 padding: 1rem 0;
+                                 color: var(--cor-vermelho);
+                                 font-weight: 600;
+                             }
+                             
+                             .metricas span {
+                                 margin-bottom: 2rem;
+                                 color: var(--cor-titulo);
+                                 font-weight: 500;
+                             }
+                             
+                             .metricas p {
+                                 margin-top: 1rem;
+                                 color: var(--cor-navegation)
+                             }
+                             
+                             .oportunidades {
+                                 padding: 8rem 0;
+                                 margin: 0 6rem;
+                                 gap: 1.25rem;
+                                 text-align: center;
+                             }
+                             
+                             .vagas_abertas {
+                                 height: 50%;
+                                 margin-bottom: 1rem;
+                             }
+                             
+                             .oportunidades span {
+                                 background: #8E24240D;
+                                 margin-bottom: 2rem;
+                                 color: var(--cor-vermelho);
+                                 font-size: 14px;
+                             }
+                             
+                             .oportunidades h1 {
+                                 margin-bottom: 1rem;
+                             }
+                             
+                             .oportunidades p {
+                                 margin-bottom: 2rem;
+                                 color: var(--cor-navegation);
+                             }
+                             
+                             .oportunidades img {
+                                 width: 94%
+                             }
+                             
+                             .funcao-geral {
+                                 display: flex;
+                                 flex-direction: column;
+                             }
+                             
+                             .funcao-geral {
+                                 width: 50rem;
+                                 height: 23rem;
+                                 margin: auto auto;
+                             }
+                             
+                             .titulo-geral {
+                                 font-size: 20px;
+                                 font-weight: 500;
+                                 color: var(--cor-titulo);
+                             }
+                             
+                             .vaga {
+                                 display: flex;
+                                 flex-direction: column;
+                                 align-items: flex-start;
+                                 justify-content: flex-start;
+                                 border: 1px solid #EAECF0;
+                                 border-radius: 16px;
+                                 margin-top: 1rem;
+                                 text-align: center;
+                                 padding: 1rem;
+                                 gap: 1.5rem;
+                             }
+                             
+                             .titulo-vaga {
+                                 font-weight: 500;
+                                 font-size: 18px;
+                                 color: var(--cor-titulo);
+                             }
+                             
+                             .info-vagas {
+                                 gap: 1.5rem;
+                                 font-size: 16px;
+                                 color: var(--cor-navegation);
+                             }
+                             
+                             .depoimentos {
+                                 margin: 2rem auto;
+                                 background-color: #fca69d;
+                                 text-align: center;
+                                 width: 77%;
+                                 padding: 2rem;
+                                 border-radius: 1rem;
+                             }
+                             
+                             .depoimento-outro {
+                                 font-size: 14px;
+                                 color: var(--cor-vermelho);
+                                 font-weight: 600;
+                             }
+                             
+                             .depoimento-principal {
+                                 margin: 1rem;
+                                 font-size: 20px;
+                                 font-weight: 500;
+                                 color: var(--cor-titulo);
+                             }
+                             
+                             .depoimento-nome {
+                                 color: var(--cor-titulo);
+                                 margin-bottom: 0.5rem;
+                                 margin-top: 0.5rem;
+                             }
+                             
+                             .depoimento-profi {
+                                 color: var(--cor-navegation);
+                             }
+                             
+                             .footer {
+                                 margin: 0 auto;
+                                 background-color: #c6f7c6;
+                                 text-align: center;
+                                 width: 100%;
+                                 height: 17rem;
+                             }
+                             
+                             .footer h1 {
+                                 padding: 1rem;
+                             }
+                             
+                             .footer p {
+                                 padding: 2rem;
+                                 color: #667085;
+                             }
+                             
+                             .footer input {
+                                 border: 1px solid #D0D5DD;
+                                 border-radius: 8px;
+                                 padding: 1rem 1.2rem 1rem 1rem;
+                                 margin-right: 1rem;
+                             }
+                             
+                             .footer button {
+                                 border: 1px solid var(--cor-vermelho);
+                                 background-color: var(--cor-vermelho);
+                                 border-radius: 8px;
+                                 color: #FFFFFF;
+                                 cursor: pointer;
+                                 width: 7.5rem;
+                                 height: 2.625rem;
+                             }
+                             
+                             .footer form {
+                                 padding: 1rem;
+                             }
+                             
+                             .direitos-autorais {
+                                 color: var(--cor-navegation);
+                             }
+                             
+                             @media screen and (max-width:400px) {
+                                 .container {
+                                     margin: 0 auto;
+                                     width: 50px;
+                                 }
+                                 .sobre_nos {
+                                     text-align: center;
+                                     margin: auto auto;
+                                     width: 70%;
+                                 }
+                                 .metricas {
+                                     display: block;
+                                     width: 70%;
+                                     margin: auto auto;
+                                     text-align: center;
+                                 }
+                                 .oportunidades {
+                                     width: 60%;
+                                     display: block;
+                                     margin: auto auto
+                                 }
+                                 .oportunidades h1 {
+                                     margin-top: 1rem;
+                                     font-size: 1rem;
+                                 }
+                                 .container-funcao-geral {
+                                     margin-bottom: 10rem;
+                                 }
+                                 .funcao-geral {
+                                     width: 60%;
+                                     display: block;
+                                     margin: auto auto;
+                                 }
+                                 .footer {
+                                     display: flex;
+                                     flex-direction: column;
+                                     margin: auto auto;
+                                     align-items: center;
+                                     justify-content: center;
+                                 }
+                             }
